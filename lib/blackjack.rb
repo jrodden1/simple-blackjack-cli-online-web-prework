@@ -39,7 +39,7 @@ def invalid_command
   hit?
 end
 
-def hit?
+def hit?(arg1)
   # code hit? here
   prompt_user
   response = get_user_input
