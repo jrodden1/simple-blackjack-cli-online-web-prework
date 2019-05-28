@@ -1,6 +1,6 @@
 def welcome
   # code #welcome here
-  puts "Welcome to JR's Blackjack!"
+  puts "Welcome to the Blackjack Table"
 end
 
 def deal_card
@@ -13,7 +13,7 @@ def display_card_total(total)
 end
 
 def prompt_user
-  puts "Press (h) for Hit and (s) for Stay"
+  puts ""Type 'h' to hit or 's' to stay""
 end
 
 def get_user_input
