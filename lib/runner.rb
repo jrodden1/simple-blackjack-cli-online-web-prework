@@ -1,5 +1,5 @@
 require_relative "blackjack.rb"
-require_relative "pry.rb"
+require "pry"
 welcome
 current_total = initial_round
 until current_total > 21 do
