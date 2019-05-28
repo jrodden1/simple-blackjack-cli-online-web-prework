@@ -7,4 +7,4 @@ until current_total > 21 do
   display_card_total(current_total)
   binding.pry
 end
-end_game
+end_game(current_total)
