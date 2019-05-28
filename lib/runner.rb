@@ -1,6 +1,8 @@
 require_relative "blackjack.rb"
 welcome
-initial_round
-hit?(initial_round)
-display_card_total
-runner
+currentCount = initial_round
+while currentCount <= 21 do
+  currentCount = hit?(currentCount)
+  display_card_total(currentCount)
+end
+
