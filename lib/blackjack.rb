@@ -43,15 +43,17 @@ def hit?(initial_round)
   # code hit? here
   prompt_user
   response = get_user_input
-
+  card_total = initial_round
   case response
     when "h"
       extra_card = deal_card
+      card_total = card_total + extra_card
     when "s"
       #do nothing
     else
       invalid_command
     end
+  card_total
 end
 
 
