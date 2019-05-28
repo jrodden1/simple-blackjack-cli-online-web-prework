@@ -48,7 +48,7 @@ def hit?
 
   case response
     when "h"
-      deal_card
+      extra_card = deal_card
     when "s"
       #do nothing
     else
