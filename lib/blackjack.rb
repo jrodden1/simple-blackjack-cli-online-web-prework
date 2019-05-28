@@ -8,7 +8,7 @@ def deal_card
 end
 
 def display_card_total(total)
-  print "Your cards add up to #{total}"
+  puts "Your cards add up to #{total}"
   # code #display_card_total here
 end
 
@@ -22,9 +22,9 @@ end
 
 def end_game(total)
   # code #end_game here
-  print "Sorry, you lose! "
-  print "Your total was #{total}. "
-  print "Thank you for playing!"
+  puts "Sorry, you lose! "
+  puts "Your total was #{total}. "
+  puts "Thank you for playing!"
 end
 
 def initial_round
