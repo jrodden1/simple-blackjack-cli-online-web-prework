@@ -51,7 +51,7 @@ def hit?
       deal_card
     when "s"
       #do nothing
-    else 
+    else
       invalid_command
     end
 end
