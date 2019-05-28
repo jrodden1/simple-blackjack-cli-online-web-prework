@@ -35,13 +35,28 @@ def initial_round
   sum
 end
 
-def hit?
-  # code hit? here
-end
-
 def invalid_command
   # code invalid_command here
+  puts "Sorry, that is not a valid option, please press h or s to continue"
+  hit?
 end
+
+def hit?
+  # code hit? here
+  prompt_user
+  response = get_user_input
+
+  case response
+    when "h"
+      deal_card
+    when "s"
+      #do nothing
+    else 
+      invalid_command
+    end
+end
+
+
 
 #####################################################
 # get every test to pass before coding runner below #
