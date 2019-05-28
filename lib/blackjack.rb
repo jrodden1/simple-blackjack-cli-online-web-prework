@@ -39,11 +39,11 @@ def invalid_command
   hit?
 end
 
-def hit?(initial_round)
+def hit?(current_total)
   # code hit? here
   prompt_user
   response = get_user_input
-  card_total = initial_round
+  card_total = current_total
   case response
     when "h"
       extra_card = deal_card
