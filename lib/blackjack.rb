@@ -43,7 +43,7 @@ def hit?(current_total)
   # code hit? here
   prompt_user
   response = get_user_input
-  card_total = initial
+  card_total = current_total
   case response
     when "h"
       extra_card = deal_card
