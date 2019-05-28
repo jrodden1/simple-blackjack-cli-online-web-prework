@@ -1,29 +1,37 @@
 def welcome
   # code #welcome here
+  puts "Welcome to JR's Blackjack!"
 end
 
 def deal_card
-  # code #deal_card here
+  rand(1..11)
 end
 
-def display_card_total
+def display_card_total(total)
+  puts total
   # code #display_card_total here
 end
 
 def prompt_user
-  # code #prompt_user here
+  puts "Press (h) for Hit and (s) for Stay"
 end
 
 def get_user_input
-  # code #get_user_input here
+  gets.chomp
 end
 
-def end_game
+def end_game(total)
   # code #end_game here
+  print "Sorry, you lose! "
+  print "Your total was #{total}. "
+  print "Thank you for playing!"
 end
 
 def initial_round
-  # code #initial_round here
+  card1 = deal_card
+  card2 = deal_card
+  sum = card1 + card2
+  sum
 end
 
 def hit?
@@ -41,4 +49,3 @@ end
 def runner
   # code runner here
 end
-    
